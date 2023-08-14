@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Caixa de Entrada | protonmail.com</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="styles/content.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="middle-section">
+        <div class="search-container">
+          <div class="search-bar-container">
+            <img class="search-icon" src="icons/search.png">
+            <input class="search-bar" type="text" placeholder="Pesquisar mensagens">
+          </div>
+        </div>
+      </div>
+      <div class="right-section">
+        <div class="upgrade-button">
+          <img  class="upgrade-icon" src="icons/upgrade.png"><p class="upgrade-text">Fazer upgrade</p>
+        </div>
+        <div class="config-container">
+          <img class="config-icon" src="icons/cog-wheel.png">
+        </div>
+        <div class="spacing"></div>
+        <div class="user-center">
+          <div class="user-info">
+            <p class="user-name">Gabriel Moreira Pereira</p>
+            <p class="user-email">gabrielmoreira@protonmail.com</p>
+          </div>
+          <div class="user-acronymous-box">
+            <div class="user-acronymous">GP</div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="sidebar">
+      <div class="top-section">
+        <img class="logo" src="icons/logo.png">
+        <button class="no-mobile-button">
+          <img class="no-mobile" src="icons/no-mobile.png"> <!-- A maioria dos ícones são feitos usando programação, mas como eu não sei faze-los, estou os usando em formato de imagem-->
+        </button>
+      </div>
+      <div class="new-message-container">
+        <div class="new-message">
+          Nova mensagem
+        </div>
+      </div>
+      <div class="nav-container">
+        <div class="nav-box">
+          <div class="sidebar-links">
+            <div class="sidebar-link-inbox-active">
+              <span class="inbox-content-active">
+                <img class="inbox-active-icon" src="icons/inbox.png">
+                <span class="inbox-text">Caixa de entrada</span>
+                <span class="refresh-new-messages">
+                  <img class="refresh-icon" src="icons/refresh.png">
+                  <div class="new-messages-box">
+                    <span class="new-messages">42</span>
+                  </div>
+                </span>
+              </span>
+            </div>
+            <div class="sidebar-link">
+              <img class="sidebar-icon" src="icons/drafts.png">
+              Rascunhos
+            </div>
+            <div class="sidebar-link">
+              <img class="sidebar-icon" src="icons/sent.png">
+              Enviados
+            </div>
+            <div class="sidebar-link">
+              <img class="sidebar-icon" src="icons/favorites.png">
+              Com estrela
+            </div>
+            <div class="section-link">
+              <img class= "section-icon" src="icons/section.png">Mais
+            </div>
+            <div class="section-container">
+              <div class="section-link">
+                <img class= "section-icon" src="icons/section.png">Pastas
+              </div>
+              <div class="section-settings-container">
+                <img class="section-settings-icon" src="icons/plus.png">
+              </div>
+              <div class="section-settings-container">
+                <img class="section-settings-icon" src="icons/cog-wheel2.png">
+              </div>
+            </div>
+            <div class="section-container">
+              <div class="section-link">
+                <img class= "section-icon" src="icons/section.png">Marcadores
+              </div>
+              <div class="section-settings-container">
+                <img class="section-settings-icon" src="icons/plus.png">
+              </div>
+              <div class="section-settings-container">
+                <img class="section-settings-icon" src="icons/cog-wheel2.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="app-info-container">
+        <img class="storage-meter-icon" src="icons/storage-meter.png">
+        <div class="general-info">
+          <p class="storage"><span class="used-storage">265.55  MB</span>/ 1.00 GB</p>
+          <p class="version">5.0.26.7</p>
+        </div>
+      </div>
+    </nav>
+    <div class="content-container">
+      <div class="toolbar-container">
+        <div class="toolbar-left-section">
+          <div class="checkbox-container">
+            <input type="checkbox">
+            <span class="select-all-checkmark"></span>
+          </div>
+          <button class="toolbar-dropdown-container">
+            <img class="toolbar-dropdown" src="icons/dropdown.png">
+          </button>
+        </div>
+        <div class="toolbar-right-section">
+          <button class="page-nav-container">
+            <img class="page-nav" src="icons/threedots.png">
+          </button>
+          <span class="mid-bar"></span>
+            <button class="page-nav-container">
+              <img class="page-nav" src="icons/previouspage.png">
+            </button>
+            <button class="pages">
+              1 de 2
+            </button>
+            <button class="page-nav-container">
+              <img class="page-nav" src="icons/nextpage.png">
+            </button>
+          </div>
+        </div>
+      <div class="main-area-container">
+        <div class="emails-container">
+          <div class="emails-toolbar">
+            <div class="emails-type-filter">
+              <button class="emails-toolbar-button-active">Todos</button>
+              <button class="emails-toolbar-button">Lidos</button>
+              <button class="emails-toolbar-button">Não Lidos</button>
+              <button class="emails-toolbar-button">Tem arquivos</button>
+            </div>
+            <div class="emails-order">
+              <button class="emails-toolbar-button"><span class="emails-order-text">Mais recentes primeiro</span><img class="order-icon" src="icons/orderarrows.png"></button>
+            </div>
+          </div>
+          <div class="emails-list">
+            <span class="spacing-email"></span>
+            <div class="email-wrapper">
+              <div class="new-email-container">
+                <div class="unread-dot"></div>
+                <div class="senders-image">
+                  <img class= "senders-imagesz"src="icons/dotor.jpeg">
+                </div>
+                <div class="email-info">
+                  <div class="email-sender-time">
+                    <div class="email-sender">
+                      Dr. Matheus Arruda
+                    </div>
+                    <div email-time>
+                      18:45
+                    </div>
+                  </div>
+                  <div class="email-title">
+                    Novo Benefício para Autistas!
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="email-wrapper">
+              <div class="email-container">
+                <div class="senders-image">
+                  <img class= "senders-imagesz"src="icons/protonlogo.png">
+                </div>
+                <div class="email-info">
+                  <div class="email-sender-time">
+                    <div class="email-sender">
+                      Proton
+                    </div>
+                    <div email-time>
+                      Ontem
+                    </div>
+                  </div>
+                  <div class="email-title">
+                    We've launched Proton Pass
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="email-wrapper">
+              <div class="email-container">
+                <div class="senders-image">
+                  <img class= "senders-imagesz"src="icons/instagram.png">
+                </div>
+                <div class="email-info">
+                  <div class="email-sender-time">
+                    <div class="email-sender">
+                      Instagram
+                    </div>
+                    <div email-time>
+                      4 ago 2023
+                    </div>
+                  </div>
+                  <div class="email-title">
+                    Verifique sua conta
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="email-wrapper">
+              <div class="email-container">
+                <div class="senders-image">
+                  <img class= "senders-imagesz"src="icons/mercadopago.png">
+                </div>
+                <div class="email-info">
+                  <div class="email-sender-time">
+                    <div class="email-sender">
+                      Mercado Pago
+                    </div>
+                    <div email-time>
+                      Ontem
+                    </div>
+                  </div>
+                  <div class="email-title">
+                    [3] Seu pagamento foi creditado com sucesso!
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="email-wrapper">
+              <div class="email-container">
+                <div class="senders-image">
+                  <img class= "senders-imagesz"src="icons/itau.png">
+                </div>
+                <div class="email-info">
+                  <div class="email-sender-time">
+                    <div class="email-sender">
+                      Itaú Cartões - Fatura digital
+                    </div>
+                    <div email-time>
+                      4 ago 2023
+                    </div>
+                  </div>
+                  <div class="email-title">
+                    [3] Sua fatura mensal - Itaú Cartões
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="email-wrapper">
+              <div class="new-email-container">
+                <div class="unread-dot"></div>
+                <div class="senders-image">
+                  <img class= "senders-imagesz"src="icons/mercadolivre.png">
+                </div>
+                <div class="email-info">
+                  <div class="email-sender-time">
+                    <div class="email-sender">
+                      Mercado Livre
+                    </div>
+                    <div email-time>
+                      4 ago 2023
+                    </div>
+                  </div>
+                  <div class="email-title">
+                    [12] Você recebeu sua compra, aproveite!
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="email-wrapper">
+              <div class="new-email-container">
+                <div class="unread-dot"></div>
+                <div class="senders-image">
+                  <img class= "senders-imagesz"src="icons/mercadolivre.png">
+                </div>
+                <div class="email-info">
+                  <div class="email-sender-time">
+                    <div class="email-sender">
+                      Mercado Livre
+                    </div>
+                    <div email-time>
+                      4 ago 2023
+                    </div>
+                  </div>
+                  <div class="email-title">
+                    Você tem uma nova mensagem.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="email-wrapper">
+              <div class="email-container">
+                <div class="senders-image">
+                  <img class= "senders-imagesz"src="icons/amazon.png">
+                </div>
+                <div class="email-info">
+                  <div class="email-sender-time">
+                    <div class="email-sender">
+                      Amazon.com.br
+                    </div>
+                    <div email-time>
+                      4 ago 2023
+                    </div>
+                  </div>
+                  <div class="email-title">
+                    Seu pedido Amazon.com.br #D01-9455823-7455591
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="email-wrapper">
+              <div class="email-container">
+                <div class="senders-image">
+                  <img class= "senders-imagesz"src="icons/mercadolivre.png">
+                </div>
+                <div class="email-info">
+                  <div class="email-sender-time">
+                    <div class="email-sender">
+                      Mercado Livre
+                    </div>
+                    <div email-time>
+                      4 ago 2023
+                    </div>
+                  </div>
+                  <div class="email-title">
+                    [8] Sua compra está a caminho
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="email-wrapper">
+              <div class="email-container">
+                <div class="senders-image">
+                  <img class= "senders-imagesz"src="icons/mercadolivre.png">
+                </div>
+                <div class="email-info">
+                  <div class="email-sender-time">
+                    <div class="email-sender">
+                      Mercado Livre
+                    </div>
+                    <div email-time>
+                      4 ago 2023
+                    </div>
+                  </div>
+                  <div class="email-title">
+                    [2] Você tem desconto nas suas compras
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="email-wrapper">
+              <div class="email-container">
+                <div class="senders-image">
+                  <img class= "senders-imagesz"src="icons/protonlogo.png">
+                </div>
+                <div class="email-info">
+                  <div class="email-sender-time">
+                    <div class="email-sender">
+                      Filler
+                    </div>
+                    <div email-time>
+                      20 ago 1994
+                    </div>
+                  </div>
+                  <div class="email-title">
+                    90's was a long time ago
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="email-wrapper">
+              <div class="email-container">
+                <div class="senders-image">
+                  <img class= "senders-imagesz"src="icons/protonlogo.png">
+                </div>
+                <div class="email-info">
+                  <div class="email-sender-time">
+                    <div class="email-sender">
+                      Filler
+                    </div>
+                    <div email-time>
+                      20 ago 1994
+                    </div>
+                  </div>
+                  <div class="email-title">
+                    90's was a long time ago
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="email-wrapper">
+              <div class="email-container">
+                <div class="senders-image">
+                  <img class= "senders-imagesz"src="icons/protonlogo.png">
+                </div>
+                <div class="email-info">
+                  <div class="email-sender-time">
+                    <div class="email-sender">
+                      Filler
+                    </div>
+                    <div email-time>
+                      20 ago 1994
+                    </div>
+                  </div>
+                  <div class="email-title">
+                    90's was a long time ago
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="email-wrapper">
+              <div class="email-container">
+                <div class="senders-image">
+                  <img class= "senders-imagesz"src="icons/protonlogo.png">
+                </div>
+                <div class="email-info">
+                  <div class="email-sender-time">
+                    <div class="email-sender">
+                      Filler
+                    </div>
+                    <div email-time>
+                      20 ago 1994
+                    </div>
+                  </div>
+                  <div class="email-title">
+                    90's was a long time ago
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="email-wrapper">
+              <div class="email-container">
+                <div class="senders-image">
+                  <img class= "senders-imagesz"src="icons/protonlogo.png">
+                </div>
+                <div class="email-info">
+                  <div class="email-sender-time">
+                    <div class="email-sender">
+                      Filler
+                    </div>
+                    <div email-time>
+                      20 ago 1994
+                    </div>
+                  </div>
+                  <div class="email-title">
+                    90's was a long time ago
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="email-wrapper">
+              <div class="email-container">
+                <div class="senders-image">
+                  <img class= "senders-imagesz"src="icons/protonlogo.png">
+                </div>
+                <div class="email-info">
+                  <div class="email-sender-time">
+                    <div class="email-sender">
+                      Filler
+                    </div>
+                    <div email-time>
+                      20 ago 1994
+                    </div>
+                  </div>
+                  <div class="email-title">
+                    90's was a long time ago
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="email-wrapper">
+              <div class="email-container">
+                <div class="senders-image">
+                  <img class= "senders-imagesz"src="icons/protonlogo.png">
+                </div>
+                <div class="email-info">
+                  <div class="email-sender-time">
+                    <div class="email-sender">
+                      Filler
+                    </div>
+                    <div email-time>
+                      20 ago 1994
+                    </div>
+                  </div>
+                  <div class="email-title">
+                    90's was a long time ago
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="email-wrapper">
+              <div class="email-container">
+                <div class="senders-image">
+                  <img class= "senders-imagesz"src="icons/protonlogo.png">
+                </div>
+                <div class="email-info">
+                  <div class="email-sender-time">
+                    <div class="email-sender">
+                      Filler
+                    </div>
+                    <div email-time>
+                      20 ago 1994
+                    </div>
+                  </div>
+                  <div class="email-title">
+                    90's was a long time ago
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="email-wrapper">
+              <div class="email-container">
+                <div class="senders-image">
+                  <img class= "senders-imagesz"src="icons/protonlogo.png">
+                </div>
+                <div class="email-info">
+                  <div class="email-sender-time">
+                    <div class="email-sender">
+                      Filler
+                    </div>
+                    <div email-time>
+                      20 ago 1994
+                    </div>
+                  </div>
+                  <div class="email-title">
+                    90's was a long time ago
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="email-wrapper">
+              <div class="email-container">
+                <div class="senders-image">
+                  <img class= "senders-imagesz"src="icons/protonlogo.png">
+                </div>
+                <div class="email-info">
+                  <div class="email-sender-time">
+                    <div class="email-sender">
+                      Filler
+                    </div>
+                    <div email-time>
+                      20 ago 1994
+                    </div>
+                  </div>
+                  <div class="email-title">
+                    90's was a long time ago
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="emails-page-nav-container">
+            <div class="emails-page-nav">
+              <button class="emails-pag-button"><img class="emails-page-icon" src="icons/emailsfirstpage.png"></button>
+              <span class="mid-bar"></span>
+              <button class="emails-pag-button"><img class="emails-page-icon" src="icons/emailspreviouspage.png"></button>
+              <span class="mid-bar"></span>
+              <button class="emails-pag-button">1</button>
+              <span class="mid-bar"></span>
+              <button class="emails-pag-button">2</button>
+              <span class="mid-bar"></span>
+              <button class="emails-pag-button"><img class="emails-page-icon" src="icons/emailsnextpage.png"></button>
+              <span class="mid-bar"></span>
+              <button class="emails-pag-button"><img class="emails-page-icon" src="icons/emailslastpage.png"></button>
+            </div>
+          </div>
+        </div>
+        <div class="email-content-container">
+          <div class="welcome-container">
+            <div class="welcome">
+              <h1>Bem vindo(a), Gabriel Moreira Pereira</h1>
+              <p>Você tem <span>42 conversas não lidas</span> na sua caixa de entrada.</p>
+              <div class="divider"></div>
+              <img src="icons/bemvindo.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

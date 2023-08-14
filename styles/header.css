@@ -1,0 +1,155 @@
+.header {
+  display: flex;
+  font-family: inter, sans-serif;
+  letter-spacing: 0.35px;
+  color: white;
+  position: fixed;
+  left: 250px;
+  top: 0;
+  right: 0;
+}
+.middle-section {
+  height: 48px;
+  flex: 1;
+  align-items: center;
+  padding: 10px 0 10px 0;
+}
+.search-container {
+  height: 48px;
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+.search-bar-container {
+  height: 34px;
+  display: flex;
+  width: 98%;
+  border-radius: 8px;
+  border-color: rgb(70, 74, 95);
+  border-width: 1px;
+  border-style: solid;
+}
+.search-icon {
+  height: 31px;
+  width: 21px;
+  object-fit: cover;
+  padding: 0px 0px 3px 8px;
+}
+.search-bar {
+  flex: 1;
+  background-color: transparent;
+  font-size: 14px;
+  color: white;
+  padding-left: 2px;
+  font-weight: 200;
+}
+.search-bar::placeholder {
+  color: rgb(120, 130, 160);
+  font-weight: 200;
+  opacity: 0.80;
+}
+.right-section { /* Acho que como não consegui o espaçamento correot no user-center, todo o resto ficou um pouco à direita*/
+  padding-right: 10px;
+  width: 666px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.upgrade-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: rgb(215, 85, 117);
+  border-radius: 8px;
+  border-width: 1px;
+  border-style: solid;
+  background-color: transparent;
+  padding: 9px 15px 9px 15px;
+  cursor: pointer;
+}
+.upgrade-button:hover {
+  background-color: rgba(215, 85, 117, 0.15);
+  transition: background-color 0.15s;
+}
+.upgrade-icon {
+  height: 16px;
+  width: 16px;
+  object-fit: cover;
+  margin-right: 9px;
+  
+}
+.upgrade-text {
+  font-size: 13px;
+  text-align: center;
+  letter-spacing: 0.45px;
+  font-weight: 300;
+}
+.config-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  height: 32px;
+  width: 48px;
+  border-radius: 5px;
+  margin-left: 2px;
+  cursor: pointer;
+}
+.config-container:hover {
+  background-color: rgb(37, 38, 52);
+  transition: background-color 0.15s;
+}
+.config-icon {
+  height: 16px;
+  width: 16px;
+  object-fit: cover;
+}
+.spacing {
+  width: 33px;
+  height: 32px;
+  background-color: transparent;
+}
+.user-center { /* Não consegui dar o mesmo espaçamento no user-name e no e-mail, acho que por conta da fonte. O user-name parece mais colado com a esquerda também */
+  display: flex;
+  height: 32px;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 7px;
+  cursor: pointer;
+}
+.user-info {
+  letter-spacing: normal;
+  font-weight: 300;
+}
+.user-name {
+  font-size: 14px;
+  margin-bottom: 1px;
+  word-spacing: 0.5px;
+}
+.user-email {
+  font-size: 10px;
+  color: rgb(130, 130, 150);
+}
+.user-acronymous-box {
+  color: white;
+  border-color: rgba(70, 74, 95, 0.70);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 7px;
+  height: 26px;
+  width: 26px;
+  background-color: transparent;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.user-acronymous-box:hover {
+  background-color: rgb(37, 38, 52);
+  transition: background-color 0.15s;
+}
+.user-acronymous {
+  font-size: 12px;
+  font-weight: 200;
+  text-align: center;
+}

@@ -1,0 +1,382 @@
+.content-container {
+  border-top-left-radius: 8px;
+  border-top-width: 1px;
+  border-left-width: 1px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-color: rgb(52, 56, 78);
+  border-style: solid;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.toolbar-container {
+  height: 44px;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 1px;
+  border-color: rgb(52, 56, 78);
+  border-style: solid;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.toolbar-left-section {
+  height: 44px;
+  display: flex;
+  vertical-align: middle;
+  column-gap: 8px;
+  padding-top: 3.5px;
+  padding-bottom: 3.5px;
+  margin-left: 5.5px;
+  margin-right: 5.5px;
+  line-height: 20px;
+  box-sizing: border-box;
+}
+.checkbox-container {
+  display: inline-block;
+  position: relative;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  height: 36px;
+  width: 20px;
+  margin-left: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    height: 18px;
+    width: 18px;
+    margin-top: 45x;
+    cursor: pointer;
+    margin: 0 0 0 0;
+}
+.select-all-checkmark {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: transparent;
+  border-color: #34384e;
+  border-width: 1px;
+  border-radius: 4px;
+  border-style: solid;
+}
+.checkbox-container:hover input ~ .select-all-checkmark {
+  border-color: rgb(229, 50, 101);
+  transition: border-color 0.15s;
+}
+.checkbox-container input:checked ~ .select-all-checkmark {
+  background-color: rgb(229, 50, 101);
+}
+.toolbar-dropdown-container {
+  width: 16px;
+  height: 34px;
+  padding: 0px 6px 0px 6px;
+  background-color: transparent;
+  border-radius: 8px;
+  border-width: 1px;
+  border-color: transparent;
+  border-style: solid;
+  margin-left: 2px;
+  margin-right: 8px;
+  display: inline-block;
+  justify-content: center;
+  box-sizing: content-box;
+}
+.toolbar-dropdown-container:hover {
+  background-color: rgb(37, 38, 52);
+  transition: background-color 0.15s;
+}
+.toolbar-dropdown {
+  width: 16px;
+  object-fit: cover;
+  vertical-align: middle;
+}
+.toolbar-right-section { /* Não consegui alinhar essa parte, talvez seja por conta da fonte*/
+  padding-bottom: 3.5px;
+  padding-top: 3.5px;
+  margin-right: 5.5px;
+  margin-left: 5.5px;
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  box-sizing: border-box;
+  padding-right: 0px;
+}
+.mid-bar {
+  height: 28px;
+  border-width: 0px 1px 0px 0px;
+  border-style: solid;
+  border-color: rgb(52, 56, 78);
+}
+.page-nav-container {
+  height: 36px;
+  border-color: transparent;
+  border-radius: 8px;
+  border-width: 1px;
+  padding: 0px 9px 0px 9px;
+  background-color: transparent;
+  box-sizing: border-box;
+}
+.page-nav-container:hover {
+  background-color: rgb(37, 38, 52);
+  transition: background-color 0.15s;
+}
+.page-nav {
+  width: 16px;
+  object-fit: cover;
+  vertical-align: middle;
+}
+.pages {
+  padding: 0px 9px 0px 9px;
+  height: 36px;
+  border-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background-color: transparent;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14.4px;
+}
+.main-area-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.emails-container { /* Inline size missing? */
+  width: 510px;
+  overflow-y: scroll;
+  overflow-x: auto;
+  resize: horizontal;
+  box-sizing: border-box;
+  min-width: 320px;
+  max-width: calc(100% - 400px);
+  height: calc(100% - 45px);
+  display: flex;
+  flex-direction: column;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: rgb(52, 56, 78);
+}
+.emails-toolbar {
+  padding: 4px 8px 4px 8px;
+  border-width: 0px 0px 1px 0px;
+  border-bottom-width: 1px;
+  border-bottom-color: rgb(52, 56, 78);
+  border-bottom-style: solid;
+  background-color: rgb(23, 20, 27);
+  flex-wrap: wrap;
+  min-height: 0px;
+  min-width: 0px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 10;
+}
+.emails-toolbar-button {
+  margin: 0 4px 0 4px;
+  padding: 2.57px 9.43px 2.57px 9.43px;
+  border-width: 1px;
+  border-color: transparent;
+  border-radius: 8px;
+  border-style: solid;
+  min-width: 0;
+  min-height: 0;
+  background-color: transparent;
+  font-size: 12px;
+  font-weight: 200;
+}
+.emails-toolbar-button-active {
+  margin: 0 4px 0 4px;
+  padding: 2.57px 9.43px 2.57px 9.43px;
+  border-width: 1px;
+  border-color: transparent;
+  border-radius: 8px;
+  border-style: solid;
+  min-width: 0;
+  min-height: 0;
+  background-color: rgb(37, 38, 52);
+  font-size: 12px;
+  font-weight: 200;
+}
+.emails-toolbar-button:hover {
+  background-color: rgb(37, 38, 52);
+  transition: background-color 0.15s;
+}
+.emails-order button {
+  margin: 0 0 0 0;
+}
+.emails-order-text {
+  margin-right: 8px;
+}
+.order-icon {
+  width: 16px;
+  height: 16px;
+  object-fit: cover;
+  vertical-align: middle;
+}
+.emails-list {
+  z-index: 9;
+  display: grid;
+}
+.spacing-email {
+  margin-top: 45px;
+}
+.emails-wrapper {
+  
+}
+.email-container {
+  margin: 0 8px 4px 8px;
+  border-radius: 12px;
+  padding: 13px 12px 13px 16px;
+  background-color: rgb(22, 20, 28);
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 4px 0px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  flex: 1;
+  line-height: 20px;
+  outline-color: rgb(151, 155, 176);
+  outline-style: none;
+  outline-width: 0px;
+  font-family: Inter, sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  color: rgb(151, 155, 176);
+}
+.senders-image {
+  width: 32px;
+  height: 32px;
+  margin: 2px 8px 0px 2px;
+}
+.senders-imagesz {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.email-info {
+  flex: 1;
+}
+.email-sender-time {
+  display: flex;
+  justify-content: space-between;
+}
+.new-email-container {
+  margin: 0 8px 4px 8px;
+  border-radius: 12px;
+  padding: 13px 12px 13px 16px;
+  background-color: rgb(26, 25, 38);
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 4px 0px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  flex: 1;
+  line-height: 20px;
+  outline-color: rgb(151, 155, 176);
+  outline-style: none;
+  outline-width: 0px;
+  font-family: Inter, sans-serif;
+  color:white;
+  font-weight: 500;
+  font-size: 13px;
+  position: relative;
+}
+.unread-dot {
+  height: 7.5px;
+  width: 7.5px;
+  border-radius: 10px;
+  background-color: rgb(229, 50, 101);
+  position: absolute;
+  top: 28px;
+  left: 4px;
+  display: inline-block;
+}
+.emails-page-nav-container {
+  padding: 20px 20px 20px 20px;
+  box-sizing: border-box;
+  width: 100%;
+}
+.emails-page-nav {
+  height: 38px;
+  box-sizing: border-box;
+  padding: 3px 3px 3px 3px;
+  border-width: 1;
+  border-color: rgb(72, 76, 96);
+  border-style: solid;
+  border-radius: 8px;
+  vertical-align: middle;
+}
+.emails-pag-button {
+  padding: 6px 6px 6px 6px;
+  min-height: 0;
+  min-width: 0;
+  border-radius: 4;
+  border-width: 1;
+  border-style: solid;
+  border-color: transparent;
+  background-color: transparent;
+}
+.emails-page-icon {
+  width: 16px;
+  height: 16px;
+  object-fit: cover;
+}
+.email-content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: scroll;
+  flex: 1;
+}
+.welcome-container {
+  padding: 28px 16px 28px 16px;
+  display: flex;
+}
+.welcome {
+  display: flex;
+  flex-direction: column;
+  font-family: Inter, sans-serif;
+  color: white;
+  margin: 0 94.5px 0 94.5px;
+}
+.welcome h1 {
+  word-wrap: break-word;
+  width: 420px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 300;
+  margin: 0 0 0 0;
+}
+.welcome p {
+  margin: 20px 0 20px 0;
+  font-size: 13px;
+  font-weight: 300;
+  text-align: center;
+}
+.welcome span {
+  font-weight: 500;
+}
+.divider {
+  margin: 12px 0 32px 0;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: rgb(72, 76, 96);
+}
+.welcome img {
+  width: 168px;
+  height: 164px;
+  align-self: center;
+}

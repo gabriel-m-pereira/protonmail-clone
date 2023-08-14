@@ -1,0 +1,281 @@
+.sidebar {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  bottom: 0;
+  width: 250px;
+  font-family: Inter, sans-serif;
+  letter-spacing: 0.45px;
+}
+.top-section {
+  width: 218px;
+  height: 68px;
+  padding: 0 16px 0 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  width: 134px;
+  cursor: pointer;
+}
+.no-mobile-button { /* Não consegui alinhar esse ícone por nada, as bordas deveriam comer o padding do left-section, mas não sei faze-lô*/
+  padding: 0px 0px 0px 0px;
+  background-color: transparent;
+  border-radius: 8px;
+  border-width: 1px;
+  border-color: transparent;
+  border-style: solid;
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  cursor: pointer;
+  margin-right: -4px;
+  margin-top: 2px;
+  
+}
+.no-mobile {
+  width: 24px;
+  object-fit: cover;
+}
+.no-mobile-button:hover {
+  background-color: rgba(52, 56, 78, 0.7);
+  transition: background-color 0.15s;
+}
+
+.new-message-container {
+  padding: 0px 12px 8px 12px;  
+}
+.new-message {
+  background-color: rgb(229, 50, 101);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  width: 186px;
+  padding: 9px 19px 9px 19px;
+  border-radius: 8px;
+  font-size: 15.6px;
+  font-weight: 300;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(212, 67, 102);
+  flex: 0;
+  letter-spacing: normal;
+}
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  padding-bottom: 16px;
+  overflow: scroll;
+}
+.nav-box {
+  height: 100%;
+}
+.sidebar-links {
+  position: relative;
+  padding: 3px 12px 20px 12px;
+}
+.sidebar-link-inbox { /*Adicionei esse elemento por mais que na página que eu estou fazendo o inbox vai estar selecionado */
+  margin-bottom: 2px;
+  width: 204px;
+  height: 34px;
+  padding: 0px 8px 0px 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  column-gap: 8px;
+  margin-right: 8px;
+  border-width: 1px;
+  border-style: solid;
+}
+.sidebar-link-inbox:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: background-color 0.15s;
+}
+.sidebar-link-inbox-active {
+  color: rgb(47, 214, 181);
+  font-weight: 600;
+  font-size: 13px;
+  background-color: rgba(52, 56, 78, 0.5);
+  margin-bottom: 2px;
+  width: 204px;
+  height: 34px;
+  padding: 0px 8px 0px 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 8px;
+  margin-right: 8px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+}
+.inbox-content-active {
+  display: flex;
+  column-gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.inbox-active-icon {
+  height: 16px;
+  width: 16px;
+  object-fit: cover;
+  flex: 0;
+}
+.inbox-text {
+  display: flex;
+  flex: 1;
+}
+.refresh-new-messages {
+  display: flex;
+  align-items: center;
+  flex: 0;
+}
+.refresh-icon {
+  height: 16px;
+  width: 16px;
+  object-fit: cover;
+  margin-right: 8px;
+}
+.new-messages-box {
+  background-color: rgb(127, 61, 246);
+  height: 20px;
+  padding: 0px 4px 0px 4px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 14.98px;
+}
+.new-messages {
+  color: white;
+  font-size: 11px;
+  font-weight: 500;
+}
+.sidebar-link {
+  margin-bottom: 2px;
+  width: 204px;
+  height: 34px;
+  padding: 0px 8px 0px 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  column-gap: 8px;
+  margin-right: 8px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  font-weight: 300;
+  font-size: 13px;
+}
+.sidebar-link:hover {
+  background-color: rgba(52, 56, 78, 0.68);
+  transition: background-color 0.15s;
+}
+.sidebar-icon {
+  height: 16px;
+  width: 16px;
+  object-fit: cover;
+}
+.section-link {
+  padding: 0px 8px 0px 12px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 36px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  font-weight: 300;
+  font-size: 13px;
+  column-gap: 8px;
+  color: rgb(153, 155, 174);
+  font-size: 14.2px;
+  letter-spacing: normal;
+}
+.section-link:hover {
+  background-color: rgba(52, 56, 78, 0.68);
+  color: white;
+  transition: background-color 0.15s;
+  transition: color 0.15s;
+}
+.section-icon {
+  width: 16px;
+  margin-top: 2px;
+  object-fit: cover;
+}
+.section-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+}
+.section-settings-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border-width: 1px;
+  border-color: transparent;
+  border-style: solid;
+  padding: 7px 7px 7px 7px;
+}
+.section-settings-container:hover {
+  background-color: rgba(52, 56, 78, 0.68);
+  transition: background-color 0.15s;
+}
+.section-settings-icon {
+  width: 16px;
+  object-fit: cover;
+}
+.app-info-container {
+  padding: 0 12px 0 12px;
+  display: block;
+  box-sizing: border-box;
+  width: 250px;
+  flex: 0;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  line-height: 20px;
+}
+.storage-meter-icon {
+  width: 100%;
+  height: 4px;
+  object-fit: cover;
+}
+.general-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  font-weight: 100;
+  color: white;
+  padding: 8px 0px 8px 0px;
+}
+.storage {
+  display: inline-block;
+}
+.used-storage {
+  color: white;
+  font-weight: 200;
+  font-size: 10px;
+}
+.version {
+  display: inline-block;
+}
